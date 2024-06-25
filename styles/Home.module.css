@@ -1,0 +1,113 @@
+.header-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(43, 4, 94);
+}
+
+.header-container h1 {
+    font-size: 1.5em;
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.client-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px;
+    width: 100%;
+}
+.client-container > div:nth-of-type(even) {
+    background: #f7f7f7;
+}
+.btn-container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.top-container {
+    padding: 40px 0;
+    border-bottom: 3px solid black;
+    margin: 0 40px 40px 40px;
+}
+.btn-container button {
+    background: rgb(65, 65, 65);
+    color: white;
+
+    outline: none;
+    border: 2px solid rgb(77, 76, 76);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all ease-in-out .2s;
+}
+
+.btn-container button:hover {
+    background: none;
+    color: black;
+}
+.client-info-container h2 {
+    font-size: 2em;
+    color: black;
+}
+.client-info-container {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+.client-info-container table, 
+.client-info-container th, 
+.client-info-container td {
+    border-collapse: collapse;
+    overflow-x: hidden;
+
+}
+
+.client-info-container table {
+    width: 100%;  /* Adjust table width as needed */
+    table-layout: fixed;  /* This makes the columns equal width */
+    text-align: left;
+
+}
+
+.client-info-container th {
+    vertical-align: top;  /* Align content to the top */
+    border-bottom: 2px solid rgb(83, 83, 83); /* For better visibility of cells */
+    
+}
+
+.client-info-container tr {
+    height: 1px;  /* Minimal initial height, but cells expand as needed */
+    margin: 5px 0;
+    
+}
+
+.client-info-container td {
+
+    color: rgb(92, 75, 114);
+}
+
+.network-name {
+    color: grey;
+}
+
+@media (max-width: 1500px) {
+    .container {
+
+        margin: 0 60px;
+    }
+}
